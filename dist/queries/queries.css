@@ -1,0 +1,35 @@
+@media(min-width: 884px)  {
+
+    h1, h2  { font-size: 3.5rem;}
+
+    .general-cards  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'cyan-card red-card blue-card'
+            '. orange-card .';
+
+        grid-gap: 2em;
+        max-width: 70em;
+        margin: auto;
+    }
+
+    .cyan-card  { grid-area: cyan-card; }
+
+    .red-card  { grid-area: red-card; }
+    .blue-card  { grid-area: blue-card; }
+
+    .orange-card  { grid-area: orange-card; }
+    .card  { margin-bottom: 0; }
+
+    .card-position  {
+        position: relative;
+        top: 50%;
+    }
+}
+
+@media(max-width: 188px)  {
+
+    body  { font-size: 1rem; }
+    h1, h2  { font-size: 1.5rem;}
+}
